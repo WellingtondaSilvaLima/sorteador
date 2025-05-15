@@ -13,7 +13,7 @@ html {
 
 /* HEADER */
 header {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   background-color: rgb(224, 158, 34);
   display: flex;
@@ -30,7 +30,7 @@ h1 {
 
 /* MAIN */
 main {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -76,8 +76,8 @@ button:hover {
 }
 
 #resultado {
-  width: 80rem;
-  height: 40rem;
+  width: 60rem;
+  height: 20rem;
   background-color: #fff;
   margin-top: 10rem;
   transition: all 2s;
@@ -92,7 +92,7 @@ button:hover {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   background-color: rgb(224, 158, 34);
   display: flex;
@@ -114,14 +114,38 @@ footer {
   input[type="number"] {
     margin: 0.4rem 0 0.8rem 0;
   }
+
+  #resultado {
+    width: 30rem;
+    height: 10rem;
+    margin-top: 5rem;
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  #resultado > p{
+    font-weight: 700;
+    font-size: 2.0rem;
+  }
 }
 
-@media (max-width: 319px) {
+@media (max-width: 350px) {
   html {
     font-size: 65%;
   }
   
   footer > p {
     font-size: 1.2rem;
+  }
+
+  #resultado {
+    width: 25rem;
+    height: 10rem;
+    margin-top: 5rem;
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  #resultado > p{
+    font-weight: 700;
+    font-size: 2.0rem;
   }
 }
